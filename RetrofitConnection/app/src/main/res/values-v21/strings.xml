@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="castro_usuarios">Cadastro de Usuarios</string>
+    <string name="cadastro_nome">Nome</string>
+    <string name="cadastro_senha">Senha</string>
+    <string name="cadastro_login">Login</string>
+    <string name="cadastro_enviar">Enviar</string>
+</resources>
