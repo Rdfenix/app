@@ -11,9 +11,10 @@ import rudneioliveira.retrofitconnection.Users.User;
 
 public class Connection {
 
-    private static String URL = "http://192.168.0.217:3000";
-    private static Retrofit restAdapter = null;
+    private static String URL = "http://192.168.0.217:3000"; // caminho gerado pelo API node transformando os dados do banco em JSON
+    private static Retrofit restAdapter = null; // adaptador do plugin Retrofit.
 
+    //funcao que captura os dados do json e transforma os dados em java object.
     public static getAllApi get(){
         if(restAdapter == null){
             restAdapter = new Retrofit.Builder()
@@ -23,7 +24,7 @@ public class Connection {
         }
         return restAdapter.create(getAllApi.class);
     }
-
+//interface que captura os dados atras do caminho informado na url, exemplo : http://192.168.0.217:3000/result
     public interface getAllApi{
         @GET("/")
         Call<List<User>> getUser();
